@@ -408,8 +408,8 @@ public class DialogBuiltSignalProtoMotif extends DialogBuiltProtoMotif {
       }      
     }
     List<Set<String>> retval = new ArrayList<Set<String>>();
-    retval.set(POSITIVE_, retvalPos);
-    retval.set(NEGATIVE_, retvalNeg);
+    retval.add(retvalPos); // position POSITIVE_ == 0
+    retval.add(retvalNeg); // position NEGATIVE_ == 1
     return (retval);
   }
   
